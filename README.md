@@ -1,57 +1,78 @@
-# 🐾 Mascota - Desktop Pet
+# 🦄 Desktop Pet
 
-**Mascota** is a simple desktop pet application that adds a bit of fun and personality to your screen!  
-Once running, a virtual pet walks around your desktop, bringing life to your workspace.
+Animated desktop companion built with Python and Tkinter.
 
-## 🎯 Purpose
+A lightweight desktop pet featuring autonomous behaviors, animated GIF rendering with transparency, draggable interactions and a simple state machine architecture.
 
-This project was created for practice and fun. It simulates a virtual pet that appears and moves across the user’s desktop screen, creating a playful and interactive experience.
+---
 
-## 🚀 Features
+## ✨ Features
 
-- 🐶 A small pet image that moves randomly on the screen  
-- 🖥️ Runs directly on the desktop environment  
-- 🔁 Loops movement with randomized direction and delay  
-- 👀 Lightweight and beginner-friendly code
+- 🎞️ Animated GIF rendering with native transparency
+- 🖱️ Draggable desktop companion
+- 🚶 Autonomous random walking behavior
+- 🦘 Smooth jumping animation with parabola motion
+- 🧠 State machine architecture (`IDLE`, `WALK`, `JUMP`, `DRAG`)
+- 📌 Optional always-on-top mode
+- 📏 Dynamic resizing from context menu
+- 🧹 Safe resource cleanup
+- ⚡ Lightweight and simple
 
-## 🛠️ Technologies Used
+---
 
-- Python 🐍  
-- `tkinter` for GUI and screen interaction  
-- `PIL` or `pillow` for image handling 
+## 🛠️ Technologies
 
-## ▶️ How to Run
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-FFCC00?style=for-the-badge&logo=python&logoColor=black)
+![Pillow](https://img.shields.io/badge/Pillow-8A2BE2?style=for-the-badge)
+![GIF Animation](https://img.shields.io/badge/GIF-Animation-ff69b4?style=for-the-badge)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/fativilla/Mascota.git
-   cd Mascota
-##-------------------------------------------------------------------------------------------------------------------------------------
-# 🐾 Mascota - Mascota de Escritorio
+---
 
-**Mascota** es una aplicación sencilla que agrega una mascota virtual a tu escritorio.  
-Al ejecutarse, la mascota camina por la pantalla y le da un toque divertido y animado a tu entorno de trabajo.
+## 🧱 Architecture
 
-## 🎯 Propósito
+The project is organized into modular components:
 
-Este proyecto fue creado con fines prácticos y recreativos. Simula una mascota virtual que aparece y se mueve por el escritorio del usuario, generando una experiencia interactiva y amena.
+| Component | Responsibility |
+|---|---|
+| `VideoPlayer` | GIF animation playback |
+| `WindowManager` | Window transparency and geometry |
+| `BehaviorEngine` | Autonomous behavior state machine |
+| `DesktopPet` | Main application orchestration |
 
-## 🚀 Funcionalidades
+---
 
-- 🐶 Imagen de una mascota que se mueve aleatoriamente por la pantalla  
-- 🖥️ Se ejecuta directamente sobre el escritorio  
-- 🔁 Movimiento en bucle con dirección y tiempo aleatorios  
-- 👀 Código liviano y fácil de entender
+## 🎮 Controls
 
-## 🛠️ Tecnologías utilizadas
+| Action | Behavior |
+|---|---|
+| Left Click + Drag | Move pet |
+| Right Click | Open menu |
+| Double Click | Close application |
 
-- Python 🐍  
-- `tkinter` para interfaz gráfica y control de ventana  
-- `PIL` o `pillow` para manejo de imágenes
+---
 
-## ▶️ ¿Cómo ejecutarlo?
+## 🚀 Run the project
 
-1. Cloná el repositorio:
-   ```bash
-   git clone https://github.com/fativilla/Mascota.git
-   cd Mascota
+```bash
+pip install pillow
+python main.py
+
+📸 Preview
+
+<img width="360" height="269" alt="image" src="https://github.com/user-attachments/assets/f0b7a7c6-fb90-4d77-aae9-3cdee1f04fd8" />
+<img width="290" height="187" alt="image" src="https://github.com/user-attachments/assets/548980a1-470e-4e4b-af9d-c1f745d743fd" />
+
+
+## 🌱 Future Ideas
+Sound effects
+Multiple pets
+Idle animations
+Custom skins
+Physics interactions
+AI-powered interactions
+
+## 👩‍💻 Author
+Created by FatiVilla
+
+Passionate about software development, automation and creative technology.
