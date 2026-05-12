@@ -57,13 +57,13 @@ The project is organized into modular components:
 ```bash
 pip install pillow
 python main.py
-
-📸 Preview
+---
+## 📸 Preview
 
 <img width="360" height="269" alt="image" src="https://github.com/user-attachments/assets/f0b7a7c6-fb90-4d77-aae9-3cdee1f04fd8" />
 <img width="290" height="187" alt="image" src="https://github.com/user-attachments/assets/548980a1-470e-4e4b-af9d-c1f745d743fd" />
 
-
+---
 ## 🌱 Future Ideas
 Sound effects
 Multiple pets
